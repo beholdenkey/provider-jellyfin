@@ -1,4 +1,4 @@
-# Provider Template
+# provider-jellyfin
 
 `upjet-provider-template` is a [Crossplane](https://crossplane.io/) provider that
 is built using [Upjet](https://github.com/crossplane/upjet) code
@@ -9,11 +9,13 @@ Template API.
 
 Install the provider by using the following command after changing the image tag
 to the [latest release](https://marketplace.upbound.io/providers/upbound/upjet-provider-template):
+
 ```
 up ctp provider install upbound/upjet-provider-template:v0.1.0
 ```
 
 Alternatively, you can use declarative installation:
+
 ```
 cat <<EOF | kubectl apply -f -
 apiVersion: pkg.crossplane.io/v1
@@ -32,6 +34,7 @@ You can see the API reference [here](https://doc.crds.dev/github.com/upbound/upj
 ## Developing
 
 Run code-generation pipeline:
+
 ```console
 go run cmd/generator/main.go "$PWD"
 ```
@@ -54,7 +57,6 @@ Build binary:
 make build
 ```
 
-## Report a Bug
+## References
 
-For filing bugs, suggesting improvements, or requesting new features, please
-open an [issue](https://github.com/upbound/upjet-provider-template/issues).
+- [Jellyfin API](https://api.jellyfin.org/)
