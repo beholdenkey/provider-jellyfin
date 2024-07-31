@@ -1,5 +1,8 @@
 # provider-jellyfin
 
+> [!CAUTION]
+> This is a work in progress and is not yet ready for use.
+
 `upjet-provider-template` is a [Crossplane](https://crossplane.io/) provider that
 is built using [Upjet](https://github.com/crossplane/upjet) code
 generation tools and exposes XRM-conformant managed resources for the
